@@ -1,0 +1,73 @@
+Title         : Practical Assessment: Investigation
+Author        : Thomas bass
+Logo          : False
+BibTeX: False
+
+
+
+[TITLE]
+
+# The Plan
+## Working Title
+Investigation into Malus's Law, the effect of wavelength on intensity, and the effect of increasing the number of filters between the same angle.
+
+## Aim
+1. Can Malus’s law be verified experimentally?
+2. Does a change in wavelength have any effect on intensity with polarisation filters?
+3. What is the effect of using an increasing number of polarisation filters to complete the same angle?
+
+## Background Physics
+### Polarisation Filters
+Polarisation is a property of any transverse wave, which quantifies the orientation of the oscillation as the wave propagates through space. As EM waves are oscillation in the electric and magnetic fields, light waves have the property of polarisation. Most light sources (like the sun) are unpolarised sources — each light ray has a polarisation, but overall have an equal mixture of polarisations. This light can be plane-polarised (meaning there is only one component of oscillation) with the use of a polarising filter.
+
+### Malus’s Law
+Malus's law is the law governing intensity of waves through a polarising filter. It states that the Intensity is proportional to the cosine squared of the angle between the polarisation:
+~ Equation
+I=I_0\cos^2\theta
+~
+
+## Breakdown of Experiments
+### 1: Intensity through Polarisation Filters
+To test Malus's Law, I will test the effect on light intensity though two linear polarising filters at varying angles between the incident and secondary filters, between 0 degrees and 90 degrees. For the first two experiments, the set-up is simple. Two sheets of polarising filter will be marked with angles between 0 and 90, the first being used as the Primary filter. These two filters will then be placed behind a LED light source of constant brightness, and in front of a light intensity sensor.
+
+The light intensity sensor I will be using is a BH1745 Luminance and Colour Sensor from Rohm. It is a digital colour sensor chip, with Red, Blue, and Green channels. This chip has a high sensitivity (0.005 - 40,000 Lux), and has built-in light noise (50-60 kHz) reduction [@sensor]
+
+When carrying out the experiment, this sensor will be connected to a micro-controller, which will output the raw data. As part of my initial experiments, I will find the suitable range and sensitivity of this output, by comparing the raw output with a lux-meter. I will then test the intensity though incremental angles between 0 and 90 degrees.
+
+### 2: Testing Wavelength
+For the second experiment, the set up will be identical to the first, but I will test LED's of different colours, and so different wavelengths, to see if that has any effect. The data sheets of the LEDs will be used to find their approximate wavelength.
+
+### 3: Intensity through a varying number of filters between the same angle
+For the third experiment, I will be testing the effect of using an increasing number of filters between the same angle. I will test a number of initial angles with two filters, then add filters between those two at equally spaced angles. I will also test this with an angle of 0 degrees, to provide control data for the neutral density of the filters.
+
+## Initial Experiments
+As stated above, I will carry out a number of initial experiments:
+1. Compare the raw output data of the sensor to a lux-meter to find a suitable range and sensitivity
+2. Calibrate the polarising filters to establish a common datum (vertical) angle
+3. Find a suitable voltage and brightness for the LEDs to optimise results
+4. Find a suitable distance for the equipment to maximize accuracy
+5. Find suitable increments of angles to produce accurate results
+
+## Apparatus
+- 8 Linear polarising filters
+- LEDs of varying wavelengths
+- BH1745 Light sensor
+- Microcontroller
+- Clamp stands
+- Plumb bob for vertical datum
+
+
+## Diagram
+
+
+## Risk Assessment
+There are very few risks presented by this experiment. None of the electrical equipment runs at high voltage (with the sensor being a 3.3V IC), and the LED's at maximum brightness pose no risk to permanent eye damage. 
+
+~ Bibliography { caption:"0" }
+~~ Bibitem { id:'sensor'; \
+cite-label:'1: Datasheet'}
+1: ROHM Data sheet for BH1745
+
+https://www.rohm.com/datasheet/BH1745NUC/bh1745nuc-e
+~~
+~
