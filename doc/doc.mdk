@@ -21,10 +21,24 @@ Investigation into Malus's Law, the effect of wavelength on intensity, and the e
 Polarisation is a property of any transverse wave, which quantifies the orientation of the oscillation as the wave propagates through space. As EM waves are oscillation in the electric and magnetic fields, light waves have the property of polarisation. Most light sources (like the sun) are unpolarised sources — each light ray has a polarisation, but overall have an equal mixture of polarisations. This light can be plane-polarised (meaning there is only one component of oscillation) with the use of a polarising filter.
 
 ### Malus’s Law
-Malus's law is the law governing intensity of waves through a polarising filter. It states that the Intensity is proportional to the cosine squared of the angle between the polarisation, as shown in Malus's law [#malus] :
+Malus's law is the law governing intensity of waves through a polarising filter. It states that the Intensity is proportional to the cosine squared of the angle between the polarisation[^fn], as shown in Malus's law [#malus] :
 ~ Equation {#malus; caption: "Malus's Law" }
+I\propto\cos^2\theta
+~
+This proportionality can be equated to an equation as follows:
+~ Equation {#derive; caption "Deriving an equation" }
+\frac{I}{I_0}=\cos^2\theta
+~
+~ Equation
 I=I_0\cos^2\theta
 ~
+
+The two filters are often referred to as the "Polarizer" and the "Analyzer", but to avoid confusion I shall use "incident" and "secondary". The principal of the law is based on using one polarisation filter and polarised light, but the exact same scenario can be achieved with unpolarised light shining through two filters, with the first being "fixed" at a given zero degrees. The actual orientation of the "zero degree" of the filters has no effect, as long as all filters are calibrated to the same "zero degree"" orientation.
+
+
+
+
+[^fn]: http://www.physicshandbook.com/laws/maluslaw.htm
 
 ## Breakdown of Experiments
 ### 1: Intensity through Polarisation Filters
