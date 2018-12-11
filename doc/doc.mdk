@@ -57,15 +57,15 @@ For the third experiment, I will be testing the effect of using an increasing nu
 ## Initial Experiments
 As stated above, I will carry out a number of initial experiments:
 
-1. Compare the raw output data of the sensor to a lux-meter to find a suitable range and sensitivity
+1. Compare the raw output data of the sensor to a lux-meter to find a suitable range and sensitivity. This will also help me convert the arbitary units of the sensor to Lux values;
 
-2. Calibrate the polarising filters to establish a common datum (vertical) angle
+2. Calibrate the polarising filters to establish a common "zero degrees" angle (or datum); 
 
-3. Find a suitable voltage and brightness for the LEDs to optimise results
+3. Find a suitable voltage and brightness for the LEDs to optimise results, but maintain steady LED performance;
 
-4. Find a suitable distance for the equipment to maximize accuracy
+4. Find a suitable distance for the equipment to maximize accuracy but allow room for the apparatus to be used;
 
-5. Find suitable increments of angles to produce accurate results
+5. Find suitable increments of angles to produce accurate results in a reasonable time scale.
 
 ## Apparatus
 - 8 Linear polarising filters
