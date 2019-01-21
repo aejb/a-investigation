@@ -7,7 +7,7 @@ BibTeX: False
 
 [TOC]
 
-# The Plan
+# The Initial Plan
 ## Working Title
 Investigation into Malus's Law, the effect of wavelength on intensity, and the effect of increasing the number of filters between the same angle.
 
@@ -73,10 +73,6 @@ As stated above, I will carry out a number of initial experiments:
 - Clamp stands
 - Plumb bob for vertical datum
 
-
-## Diagram
-
-
 ## Risk Assessment
 There are very few risks presented by this experiment. None of the electrical equipment runs at high voltage (with the sensor being a 3.3V IC), and the LED's at maximum brightness pose no risk to permanent eye damage. 
 
@@ -88,3 +84,5 @@ cite-label:'1: Datasheet'}
 https://www.rohm.com/datasheet/BH1745NUC/bh1745nuc-e
 ~~
 ~
+
+## Diagram
