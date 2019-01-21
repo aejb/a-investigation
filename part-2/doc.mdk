@@ -1,5 +1,4 @@
-Title         : Practical Assessment: Investigation
-Author        : Thomas Bass
+Author        : 21 January 2019
 Logo          : False
 BibTeX: False
 
@@ -7,12 +6,51 @@ BibTeX: False
 
 [TOC]
 
-# Thw rite up
+# Initial Experiments
 
-## aaaaaa
-aaa
+## Calibrating the filters
+
+>Calibrate the polarising filters to establish a common "zero degrees" angle (or datum)
+
+Each filter sheet arrived as a 10cmx10cm sheet, which was aligned vertically in packaging. The sheet was split into four 5cm5xcm segments, and the vertical was marked on each. The sheets were then cut, and each of the 8 squares was stuck to circular sheets of card with square cut outs. This means that angles could be marked on the perimeter, and the sheets can be rotated easily.
+
+The circular filters were then double checked for their "0 degrees" mark by aligning each, and ensuring that all light passed through at 0 degrees, and all light was blocked at 90 degrees.
+
+## Calibrating the LEDs
+
+>Find a suitable voltage and brightness for the LEDs to optimise results, but maintain steady LED performance; 
+
+The Microcontroller used for this investigation (Raspberry Pi Model 3A+) provides a regulated 3.3V output. This was connected to a 10mm white LED, which then provided sufficient intensity to be used in the experiment. 
+
+## Set up distances
+
+>Find a suitable distance for the equipment to maximize accuracy but allow room for the apparatus to be used; 
+
+The equipment was set up with a clamp stand for each equipment, and the component were aligned so that the bases were as close as possible. This resulted in the components being close enough together so as to avoid significant reduction in intensity due to the inverse square law.
 
 
+## Finding relationship between the sensor output and Lux
+>Compare the raw output data of the sensor to a lux-meter to find a suitable range and sensitivity. This will also help me convert the arbitrary units of the sensor to Lux value
+
+Firstly, the equipment was set up as shown in the diagram: clamp stands holding each the LED, sensor, and polarising filters. A Luxmeter was then attached just above the sensor with another clamp stand, so that the spread of light was even on both the sensor and diagram (a sheet of paper was used to achieve this). 
+
+Measurements were then taken comparing the output of the sensor to the readings on the Luxmeter. These were taken at suitable intervals to produce a line of best fit. The results are shown below in [#tab-sample]
+
+~ TableFigure { #tab-sample; \
+    caption: "Initial experiment to find the relationship between sensor output and lux"; }
+|Raw sensor output| Luxmeter (Lux x10)|
+|-----------------|:------------------|
+| 854             | 124               |
+| 695             | 97                |
+| 552             | 77                |
+| 346             | 45                |
+| 123             | 14                |
+| 119             | 13                |
+| 13              | 0                 |
+|-----------------|-------------------|
+{ .booktable }
+~
+These results were plotted on a scatter graph, and a line of best fit was generated
 
 
 ~ Bibliography { caption:"0" }
