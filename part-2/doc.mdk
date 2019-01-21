@@ -53,9 +53,10 @@ Measurements were then taken comparing the output of the sensor to the readings 
 ~
 These results were plotted on a scatter graph, and a line of best fit was generated:
 
-![Screenshot 2019-01-21 at 20.17.41]
+![results]
 
-[Screenshot 2019-01-21 at 20.17.41]: images/Screenshot-2019-01-21-at-20.17.41.png "Screenshot 2019-01-21 at 20.17.41" { width:auto; max-width:90% }
+[results]: images/results.pdf "results" { width:auto; max-width:90% }
+
 
 This means that the equation of line of best fit is $y=0.147x-4.02$, which means that $\text{Lux}\approx\text{Raw data}*0.147$
 
