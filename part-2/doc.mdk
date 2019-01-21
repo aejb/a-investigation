@@ -54,7 +54,6 @@ Measurements were then taken comparing the output of the sensor to the readings 
 These results were plotted on a scatter graph, and a line of best fit was generated:
 
 ![results]
-
 [results]: images/results.pdf "results" { width:auto; max-width:90% }
 
 
