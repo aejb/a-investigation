@@ -50,14 +50,9 @@ Measurements were then taken comparing the output of the sensor to the readings 
 |-----------------|-------------------|
 { .booktable }
 ~
-These results were plotted on a scatter graph, and a line of best fit was generated
+These results were plotted on a scatter graph, and a line of best fit was generated:
 
+![Screenshot 2019-01-21 at 20.17.41]
 
-~ Bibliography { caption:"0" }
-~~ Bibitem { id:'fuck'; \
-cite-label:'1: AAAAAA'}
-1: AAAAA
+[Screenshot 2019-01-21 at 20.17.41]: images/Screenshot-2019-01-21-at-20.17.41.png "Screenshot 2019-01-21 at 20.17.41" { width:auto; max-width:90% }
 
-https://www.rohm.com/datasheet/BH1745NUC/bh1745nuc-e
-~~
-~
