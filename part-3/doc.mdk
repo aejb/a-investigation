@@ -7,16 +7,20 @@ BibTeX: False
 
 [TOC]
 
-# The Second Day
-## one
+# Session One
+## Can Malus’s law be verified experimentally?
 
+### Procedure (Practical Method)
 
+1. Set up the equipment with the white LED and two filters.
+2. Turn on the mictrocotroller, and set the filters to a 0 degrees offset.
+3. Record the initial intensity sensor value.
+4. Change the angle between the two filters in steps of 5 degrees, and record the intensity sensor value at each offset interval, being careful not to misalign the sensor or LED.
+5. Repeat steps 3 and 4 until a sufficient number of repeats has been obtained to reduce the impact of anomalous results.
 
-~ Bibliography { caption:"0" }
-~~ Bibitem { id:'fuck'; \
-cite-label:'1: AAAAAA'}
-1: AAAAA
+### Evaluation of Procedure
 
-https://www.rohm.com/datasheet/BH1745NUC/bh1745nuc-e
-~~
-~
+### Table of Results
+
+### Evaluation of Readings
+
