@@ -1,0 +1,22 @@
+Title         : The Second Day
+Author        : 22 January 2019
+Logo          : False
+BibTeX: False
+
+[TITLE]
+
+[TOC]
+
+# The Second Day
+## one
+
+
+
+~ Bibliography { caption:"0" }
+~~ Bibitem { id:'fuck'; \
+cite-label:'1: AAAAAA'}
+1: AAAAA
+
+https://www.rohm.com/datasheet/BH1745NUC/bh1745nuc-e
+~~
+~
