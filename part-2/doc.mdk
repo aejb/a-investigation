@@ -35,7 +35,7 @@ The equipment was set up with a clamp stand for each equipment, and the componen
 
 Firstly, the equipment was set up as shown in the diagram: clamp stands holding each the LED, sensor, and polarising filters. A Luxmeter was then attached just above the sensor with another clamp stand, so that the spread of light was even on both the sensor and diagram (a sheet of paper was used to achieve this). 
 
-Measurements were then taken comparing the output of the sensor to the readings on the Luxmeter. These were taken at suitable intervals to produce a line of best fit. The results are shown below in [#tab-sample]
+Measurements were then taken comparing the output of the sensor to the readings on the Luxmeter. These were taken at suitable  intervals to produce a line of best fit. The results are shown below in [#tab-sample]
 
 ~ TableFigure { #tab-sample; \
     caption: "Initial experiment to find the relationship between sensor output and lux"; }
