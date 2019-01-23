@@ -28,23 +28,57 @@ The LED beam also spread further than expected, reducing the intensity at the se
 
 ### Table of Results.
 
-Table [#tab-sample] shows an example table figure.
+Table [#results] shows the results of session one.
 
-~ TableFigure { #tab-sample; \
-    caption: "Modelle mit unterschiedlich geschätztem baseline hazard"; }
-|                 | $c(t)$                                         ||||
-|                 |---------|---------|---------|---------------------|
-|                 | (A0)    | (A1)    | (A2)    | (A3)                |
-|                 | ohne    | Log     | Polynom | Stückweise konstant |
-|:----------------|:-------:|:-------:|:-------:|:-------------------:|
-| Log likelihood  | -6.798  | -6.733  | -6.715  | -6.686              |
-| Pseudeo $R^{2}$ | 0,048   | 0,057   | 0,059   | -                   |
-| AIC             | 13.615  | 13.489  | 13.456  | 13.483              |
-| BIC             | 13.711  | 13.594  | 13.580  | 14.009              |
-| N               | 105.484 | 105.484 | 105.484 | 105.484             |
-|-----------------|---------|---------|---------|---------------------|
+~ TableFigure { #results; \
+    caption: "Experiment 1 results"; }
+|      |-------------------|-----------|--------------|---------|---------|
+|Angle | Raw sensor output |           |              |         |         |
+|      | Repeat one        | Repeat two| Repeat three | Average | Std Dev |
+|:-----|:-----------------:|:---------:|:------------:|:-------:|:-------:|
+| 0    | 1240              | 1121      | 1255         | 1205    | 73.4    |
+| 5    | 1270              | 1105      | 1225         | 1200    | 85.3    |
+| 10   | 1265              | 1077      | 1187         | 1176    | 94.4    |
+| 15   | 1245              | 1022      | 1115         | 1127    | 112.0   |
+| 20   | 1204              | 961       | 1036         | 1067    | 124.4   |
+| 25   | 1151              | 887       | 949          | 996     | 138.0   |
+| 30   | 1099              | 839       | 875          | 937     | 140.9   |
+| 35   | 1030              | 751       | 773          | 851     | 155.1   |
+| 40   | 971               | 636       | 655          | 754     | 188.1   |
+| 45   | 841               | 561       | 514          | 639     | 176.8   |
+| 50   | 697               | 448       | 465          | 539     | 139.1   |
+| 55   | 571               | 398       | 366          | 445     | 110.3   |
+| 60   | 451               | 278       | 303          | 344     | 93.5    |
+| 65   | 321               | 203       | 195          | 240     | 70.6    |
+| 70   | 222               | 141       | 120          | 161     | 53.9    |
+| 75   | 130               | 83        | 62           | 92      | 34.8    |
+| 80   | 64                | 38        | 34           | 45      | 16.3    |
+| 85   | 17                | 16        | 9            | 14      | 4.4     |
+| 90   | 1                 | 1         | 1            | 1       | 0       |
+|------|-------------------|-----------|--------------|---------| --------|
 { .booktable }
 ~
 
 ### Evaluation of Readings
+
+These results follow exactly with the expected outcomes. The variation in initial values is due to changes in the distance between LED and sensor, and the different polarising filters used. The standard variation of the results is within acceptable ranges, but it is interesting to note that the standard deviation clearly increases towards the middle of the range of angles, and decreases again towards the end of the range. This is due to the change in starting intensity having little effect towards the extremes of intensity
+
+### Analysis of Readings
+
+To verify that these readings follow Malus's law, we need to use the following substitutions:
+
+$I\propto\cos^2\theta$
+
+$I=I_0\cos^2\theta$
+
+$\Rightarrow y=mx+c$
+
+$\therefore y=I, m=I_0, x=\cos^2\theta, c=0$
+
+We can plot these values on a line graph:
+
+![Screenshot 2019-01-23 at 19.28.08]
+
+[Screenshot 2019-01-23 at 19.28.08]: images/Screenshot-2019-01-23-at-19.28.08.pdf "Screenshot 2019-01-23 at 19.28.08" { width:auto; max-width:90% }
+
 
