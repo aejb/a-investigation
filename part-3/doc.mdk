@@ -8,7 +8,7 @@ BibTeX: False
 [TOC]
 
 # Session One
-## Can Malus’s law be verified experimentally?
+## Can Malusâ€™s law be verified experimentally?
 
 ### Procedure (Practical Method)
 
@@ -80,5 +80,3 @@ We can plot these values on a line graph:
 ![results]
 
 [results]: images/results.pdf "results" { width:auto; max-width:90% }
-
-
