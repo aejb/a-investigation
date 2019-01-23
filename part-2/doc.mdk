@@ -2,6 +2,7 @@ Title         : Initial Experiments
 Author        : 21 January 2019
 Logo          : False
 BibTeX: False
+Package: float
 
 [TITLE]
 
@@ -38,7 +39,7 @@ Firstly, the equipment was set up as shown in the diagram: clamp stands holding 
 Measurements were then taken comparing the output of the sensor to the readings on the Luxmeter. These were taken at suitable  intervals to produce a line of best fit. The results are shown below in [#tab-sample]
 
 ~ TableFigure { #tab-sample; \
-    caption: "Initial experiment to find the relationship between sensor output and lux"; }
+    caption: "Initial experiment to find the relationship between sensor output and lux";page-align: inplace; }
 |Raw sensor output| Luxmeter (Lux x10)|
 |-----------------|:------------------|
 | 854             | 124               |
