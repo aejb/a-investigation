@@ -2,13 +2,15 @@ Title         : The Second Day
 Author        : 22 January 2019
 Logo          : False
 BibTeX: False
+Package: float
+
 
 [TITLE]
 
 [TOC]
 
 # Session One
-## Can Malusâ€™s law be verified experimentally?
+## Can MalusÃ¢â‚¬â„¢s law be verified experimentally?
 
 ### Procedure (Practical Method)
 
@@ -20,9 +22,9 @@ BibTeX: False
 
 ### Evaluation of Procedure
 
-This first method was easy to carry out once all the equiptment was aligned correctly, and the sensor placed over the center of the LED beam. Initially, two clamp stands were used for each of the polarising filters, and the primary filter was rotated in place. This, however, caused a cramped working space, causing the sensor to shift position.
+This first method was easy to carry out once all the equipment was aligned correctly, and the sensor placed over the center of the LED beam. Initially, two clamp stands were used for each of the polarising filters, and the primary filter was rotated in place. This, however, caused a cramped working space, causing the sensor to shift position.
 
-To combat this, I placed both the filters, sandwiched together, in the same clamp stand. For each offest interval, both filters were removed, rotated, and put back into place, carefully making sure that the filter covered all the beam.
+To combat this, I placed both the filters, sandwiched together, in the same clamp stand. For each offset interval, both filters were removed, rotated, and put back into place, carefully making sure that the filter covered all the beam.
 
 The LED beam also spread further than expected, reducing the intensity at the sensor. This was reduced by moving the components as close together as possible, but could have been entirely eliminated with the use of a laser.
 
@@ -31,7 +33,7 @@ The LED beam also spread further than expected, reducing the intensity at the se
 Table [#results] shows the results of session one.
 
 ~ TableFigure { #results; \
-    caption: "Experiment 1 results"; }
+    caption: "Experiment 1 results"; page-align: inplace;}
 |      |-------------------|-----------|--------------|---------|---------|
 |Angle | Raw sensor output |           |              |         |         |
 |      | Repeat one        | Repeat two| Repeat three | Average | Std Dev |
@@ -80,3 +82,24 @@ We can plot these values on a line graph:
 ![results]
 
 [results]: images/results.pdf "results" { width:auto; max-width:90% }
+
+From these graphs, we can see that each repeat produces roughly the same result - the line of best fit produces gradients which are roughly equal to the initial intensity $I_0$. From this, combined with the accurate prediction of a linear function, shows with considerable confidence that these results experimentally verify Malus's law.
+
+For each repeat, the calculated $I_0$ is not exactly as observed, as seen in table [#diff]
+
+~ TableFigure { #diff ; \
+    caption: "Difference in observed and calculated $I_0$"; page-align: inplace; }
+|      |----------|------------|------------|
+|Repeat| Observed | Calculated | Difference |
+|:-----|:--------:|:----------:|:----------:|
+| 1    | 1240     | 1237       | 3          |
+| 2    | 1121     | 1093       | 28         |
+| 3    | 1255     | 1226       | 29         |
+|------|----------|------------|------------|
+{ .booktable; }
+~
+
+This shows differences between observed and calculated initial intensities within acceptable error ranges. The difference can mostly be explained by the neutral density effect of the polarising filters - even at zero degrees there is a significant reduction in intensity with and without the filter. 
+
+These results also seem to indicate that the original method (with two separate clamp stands for each filter) seemed to produce more accurate results than the secondary method (with one clamp stand for both filters sandwiched together). However, repeats two and three clearly show a better line of best fit, with much larger deviation from best fit in repeat one. This means that the accuracy is purely a coincidentally better gradient.
+
