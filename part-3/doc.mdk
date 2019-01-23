@@ -13,14 +13,38 @@ BibTeX: False
 ### Procedure (Practical Method)
 
 1. Set up the equipment with the white LED and two filters.
-2. Turn on the mictrocotroller, and set the filters to a 0 degrees offset.
+2. Turn on the microcontroller, and set the filters to a 0 degrees offset.
 3. Record the initial intensity sensor value.
 4. Change the angle between the two filters in steps of 5 degrees, and record the intensity sensor value at each offset interval, being careful not to misalign the sensor or LED.
 5. Repeat steps 3 and 4 until a sufficient number of repeats has been obtained to reduce the impact of anomalous results.
 
 ### Evaluation of Procedure
 
-### Table of Results
+This first method was easy to carry out once all the equiptment was aligned correctly, and the sensor placed over the center of the LED beam. Initially, two clamp stands were used for each of the polarising filters, and the primary filter was rotated in place. This, however, caused a cramped working space, causing the sensor to shift position.
+
+To combat this, I placed both the filters, sandwiched together, in the same clamp stand. For each offest interval, both filters were removed, rotated, and put back into place, carefully making sure that the filter covered all the beam.
+
+The LED beam also spread further than expected, reducing the intensity at the sensor. This was reduced by moving the components as close together as possible, but could have been entirely eliminated with the use of a laser.
+
+### Table of Results.
+
+Table [#tab-sample] shows an example table figure.
+
+~ TableFigure { #tab-sample; \
+    caption: "Modelle mit unterschiedlich geschätztem baseline hazard"; }
+|                 | $c(t)$                                         ||||
+|                 |---------|---------|---------|---------------------|
+|                 | (A0)    | (A1)    | (A2)    | (A3)                |
+|                 | ohne    | Log     | Polynom | Stückweise konstant |
+|:----------------|:-------:|:-------:|:-------:|:-------------------:|
+| Log likelihood  | -6.798  | -6.733  | -6.715  | -6.686              |
+| Pseudeo $R^{2}$ | 0,048   | 0,057   | 0,059   | -                   |
+| AIC             | 13.615  | 13.489  | 13.456  | 13.483              |
+| BIC             | 13.711  | 13.594  | 13.580  | 14.009              |
+| N               | 105.484 | 105.484 | 105.484 | 105.484             |
+|-----------------|---------|---------|---------|---------------------|
+{ .booktable }
+~
 
 ### Evaluation of Readings
 
