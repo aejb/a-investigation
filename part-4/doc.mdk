@@ -9,55 +9,50 @@ Package: float
 
 [TOC]
 
-# Session One
-## Can Malus's law be verified experimentally?
+# Session Two
+## Testing Wavelengths
+
 
 ### Procedure (Practical Method)
 
-1. Set up the equipment with the white LED and two filters.
+1. Set up the equipment with colored LEDs and two filters.
 2. Turn on the microcontroller, and set the filters to a 0 degrees offset.
 3. Record the initial intensity sensor value.
 4. Change the angle between the two filters in steps of 5 degrees, and record the intensity sensor value at each offset interval, being careful not to misalign the sensor or LED.
 5. Repeat steps 3 and 4 until a sufficient number of repeats has been obtained to reduce the impact of anomalous results.
+6. Repeat steps with different colors of LEDs: Red, Green, and Blue
 
 ### Evaluation of Procedure
 
-This first method was easy to carry out once all the equipment was aligned correctly, and the sensor placed over the center of the LED beam. Initially, two clamp stands were used for each of the polarising filters, and the primary filter was rotated in place. This, however, caused a cramped working space, causing the sensor to shift position.
-
-To combat this, I placed both the filters, sandwiched together, in the same clamp stand. For each offset interval, both filters were removed, rotated, and put back into place, carefully making sure that the filter covered all the beam.
-
-The LED beam also spread further than expected, reducing the intensity at the sensor. This was reduced by moving the components as close together as possible, but could have been entirely eliminated with the use of a laser.
+This procedure was relatively easy, as I could use the same set-up as experiment 1. The major issue encountered was the variation in initial intensity. With experiment 1, only one type LED was used, so each repeat started with roughly the same initial conditions. With this experiment, each LED had a different initial brightness, as can be observed in the results below. This, however, will not affect my results, as I can both account for this in the final analysis, and compare each set of data separately.
 
 ### Table of Results.
 
-Table [#results] shows the results of session one.
-
 ~ TableFigure { #results; \
-    caption: "Experiment 1 results"; page-align: inplace;}
+    caption: "Experiment 2: Green LED"; page-align: inplace;}
 |      |-------------------|-----------|--------------|---------|---------|
 |Angle | Raw sensor output |           |              |         |         |
 |      | Repeat one        | Repeat two| Repeat three | Average | Std Dev |
 |:-----|:-----------------:|:---------:|:------------:|:-------:|:-------:|
-| 0    | 1240              | 1121      | 1255         | 1205    | 73.4    |
-| 5    | 1270              | 1105      | 1225         | 1200    | 85.3    |
-| 10   | 1265              | 1077      | 1187         | 1176    | 94.4    |
-| 15   | 1245              | 1022      | 1115         | 1127    | 112.0   |
-| 20   | 1204              | 961       | 1036         | 1067    | 124.4   |
-| 25   | 1151              | 887       | 949          | 996     | 138.0   |
-| 30   | 1099              | 839       | 875          | 937     | 140.9   |
-| 35   | 1030              | 751       | 773          | 851     | 155.1   |
-| 40   | 971               | 636       | 655          | 754     | 188.1   |
-| 45   | 841               | 561       | 514          | 639     | 176.8   |
-| 50   | 697               | 448       | 465          | 539     | 139.1   |
-| 55   | 571               | 398       | 366          | 445     | 110.3   |
-| 60   | 451               | 278       | 303          | 344     | 93.5    |
-| 65   | 321               | 203       | 195          | 240     | 70.6    |
-| 70   | 222               | 141       | 120          | 161     | 53.9    |
-| 75   | 130               | 83        | 62           | 92      | 34.8    |
-| 80   | 64                | 38        | 34           | 45      | 16.3    |
-| 85   | 17                | 16        | 9            | 14      | 4.4     |
-| 90   | 1                 | 1         | 1            | 1       | 0       |
-|------|-------------------|-----------|--------------|---------| --------|
+|0     | 162               | 178       | 156          |         | 11.4    |
+| 5    | 159               | 175       | 157          |         | 9.9     |
+| 10   | 151               | 168       | 157          |         | 9.5     |
+| 15   | 145               | 160       | 148          |         | 7.9     |
+| 20   | 136               | 155       | 139          |         | 10.2    |
+| 25   | 124               | 141       | 131          |         | 8.5     |
+| 30   | 114               | 124       | 123          |         | 5.5     |
+| 35   | 99                | 111       | 106          |         | 6.0     |
+| 40   | 86                | 95        | 93           |         | 4.7     |
+| 45   | 71                | 81        | 81           |         | 5.8     |
+| 50   | 60                | 69        | 67           |         | 4.7     |
+| 55   | 46                | 52        | 55           |         | 4.6     |
+| 60   | 33                | 39        | 40           |         | 3.8     |
+| 65   | 25                | 28        | 31           |         | 3.0     |
+| 70   | 15                | 16        | 22           |         | 3.8     |
+| 75   | 10                | 9         | 14           |         | 2.6     |
+| 80   | 5                 | 5         | 7            |         | 1.2     |
+| 85   | 1                 | 1         | 2            |         | 0.6     |
+| 90   | 0                 | 0         | 0            |         | 0       |
 { .booktable }
 ~
 
