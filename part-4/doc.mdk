@@ -133,8 +133,7 @@ $\therefore y=I, m=I_0, x=\cos^2\theta, c=0$
 
 These were then plotted as a line graph for each color, and lines of best fit were generated:
 
-
-From these graphs, we can see that each repeat produces roughly the same result - the line of best fit produces gradients which are roughly equal to the initial intensity $I_0$. From this, combined with the accurate prediction of a linear function, shows with considerable confidence that these results experimentally verify Malus's law.
+Again, these results all show a straight line of best fit, with the gradient equal to the initial intensity. From that, we can conclude that the different colored LEDs all follow Malus's law.
 
 For each repeat, the calculated $I_0$ is not exactly as observed, as seen in table [#diff]
 
