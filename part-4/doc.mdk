@@ -135,15 +135,15 @@ These were then plotted as a line graph for each color, and lines of best fit we
 
 ![green]
 
-[green]: images/green.pdf "green" { width:auto; max-width:90%; tranform-rotate:90; }
+[green]: images/green.pdf "green" { width:auto; max-width:90%; tranform-rotate:270 }
 
 ![blue]
 
-[blue]: images/blue.pdf "blue" { width:auto; max-width:90%; tranform-rotate:90; }
+[blue]: images/blue.pdf "blue" { width:auto; max-width:90%; tranform-rotate:270 }
 
 ![red]
 
-[red]: images/red.pdf "red" { width:auto; max-width:90%; tranform-rotate:90; }
+[red]: images/red.pdf "red" { width:auto; max-width:90%; tranform-rotate:270 }
 
 
 From these graphs, we can see that each repeat produces roughly the same result - the line of best fit produces gradients which are roughly equal to the initial intensity $I_0$. From this, combined with the accurate prediction of a linear function, shows with considerable confidence that these results experimentally verify Malus's law.
