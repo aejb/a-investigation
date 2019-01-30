@@ -115,11 +115,13 @@ This procedure was relatively easy, as I could use the same set-up as experiment
 
 ### Evaluation of Readings
 
-These readings were somewhat harder to achieve than the first experiment. For the green and blue LEDs, the type of LED (10mm) was used, so the results were similar, however with both having noticably lower initial 
+These readings were somewhat harder to achieve than the first experiment. For the green and blue LEDs, the type of LED (10mm) was used, so the results were similar, however with both having noticeably lower initial intensities. This is due to the neutral density effect of the LED coloring, and will not affect my analysis, as we will not need to compare the initial intensity of the different colors directly.
+
+The accuracy and standard deviation of these results was somewhat unexpected. The blue LED had error ranges between repeats comparable to the first experiment, but the red and green LEDs both had much smaller deviation between repeats. This is due to the overall intensities being lower, which means that there is a narrower range of results, due to the resolution of the sensor being 1.
 
 ### Analysis of Readings
 
-To verify that these readings follow Malus's law, we need to use the following substitutions:
+We can make the same substitutions as Experiment one to verify that these results follow Malus's law, with wavelength having no effect:
 
 $I\propto\cos^2\theta$
 
@@ -129,11 +131,20 @@ $\Rightarrow y=mx+c$
 
 $\therefore y=I, m=I_0, x=\cos^2\theta, c=0$
 
-We can plot these values on a line graph:
+These were then plotted as a line graph for each color, and lines of best fit were generated:
 
-![results]
+![green]
 
-[results]: images/results.pdf "results" { width:auto; max-width:90% }
+[green]: images/green.pdf "green" { width:auto; max-width:90% }
+
+![blue]
+
+[blue]: images/blue.pdf "blue" { width:auto; max-width:90% }
+
+![red]
+
+[red]: images/red.pdf "red" { width:auto; max-width:90% }
+
 
 From these graphs, we can see that each repeat produces roughly the same result - the line of best fit produces gradients which are roughly equal to the initial intensity $I_0$. From this, combined with the accurate prediction of a linear function, shows with considerable confidence that these results experimentally verify Malus's law.
 
