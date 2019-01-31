@@ -7,8 +7,6 @@ Package: float
 
 [TITLE]
 
-[TOC]
-
 # Session Two
 ## Testing Wavelengths
 
@@ -133,23 +131,4 @@ $\therefore y=I, m=I_0, x=\cos^2\theta, c=0$
 
 These were then plotted as a line graph for each color, and lines of best fit were generated:
 
-Again, these results all show a straight line of best fit, with the gradient equal to the initial intensity. From that, we can conclude that the different colored LEDs all follow Malus's law.
-
-For each repeat, the calculated $I_0$ is not exactly as observed, as seen in table [#diff]
-
-~ TableFigure { #diff ; \
-    caption: "Difference in observed and calculated $I_0$"; page-align: inplace; }
-|      |----------|------------|------------|
-|Repeat| Observed | Calculated | Difference |
-|:-----|:--------:|:----------:|:----------:|
-| 1    | 1240     | 1237       | 3          |
-| 2    | 1121     | 1093       | 28         |
-| 3    | 1255     | 1226       | 29         |
-|------|----------|------------|------------|
-{ .booktable; }
-~
-
-This shows differences between observed and calculated initial intensities within acceptable error ranges. The difference can mostly be explained by the neutral density effect of the polarising filters - even at zero degrees there is a significant reduction in intensity with and without the filter. 
-
-These results also seem to indicate that the original method (with two separate clamp stands for each filter) seemed to produce more accurate results than the secondary method (with one clamp stand for both filters sandwiched together). However, repeats two and three clearly show a better line of best fit, with much larger deviation from best fit in repeat one. This means that the accuracy is purely a coincidentally better gradient.
-
+Again, these results all show a straight line of best fit, with the gradient equal to the initial intensity. From that, we can make the initial conclusion that the different colored LEDs all follow Malus's law.
