@@ -1,5 +1,4 @@
-Title         : The Second Day
-Author        : 22 January 2019
+Author        : 29 January 2019
 Logo          : False
 BibTeX: False
 Package: float
@@ -9,16 +8,16 @@ Package: float
 
 [TOC]
 
-# Session Two
-## Testing Wavelengths
+# Session
+## Testing intensity through a varying number of filters between the same angle
 
 
 ### Procedure (Practical Method)
 
-1. Set up the equipment with colored LEDs and two filters.
-2. Turn on the microcontroller, and set the filters to a 0 degrees offset.
+1. Set up the equipment with white LEDs.
+2. Turn on the microcontroller, and set two filters to the initial angle (90 degrees).
 3. Record the initial intensity sensor value.
-4. Change the angle between the two filters in steps of 5 degrees, and record the intensity sensor value at each offset interval, being careful not to misalign the sensor or LED.
+4. Add the next filter, keeping the same total angle but changing the angle between adjacent filters to ensure offset is equidistant.
 5. Repeat steps 3 and 4 until a sufficient number of repeats has been obtained to reduce the impact of anomalous results.
 6. Repeat steps with different colors of LEDs: Red, Green, and Blue
 
@@ -31,87 +30,20 @@ This procedure was relatively easy, as I could use the same set-up as experiment
 ~ TableFigure { #results; \
     caption: "Experiment 2: Green LED"; page-align: inplace;}
 |      |-------------------|-----------|--------------|---------|---------|
-|Angle | Raw sensor output |           |              |         |         |
+|Filters | Raw sensor output |           |              |         |         |
 |      | Repeat one        | Repeat two| Repeat three | Average | Std Dev |
 |:-----|:-----------------:|:---------:|:------------:|:-------:|:-------:|
-| 0    | 162               | 178       | 156          | 165.3   | 11.4    |
-| 5    | 159               | 175       | 157          | 163.7   | 9.9     |
-| 10   | 151               | 168       | 157          | 157.0   | 9.5     |
-| 15   | 145               | 160       | 148          | 151.0   | 7.9     |
-| 20   | 136               | 155       | 139          | 143.3   | 10.2    |
-| 25   | 124               | 141       | 131          | 132.0   | 8.5     |
-| 30   | 114               | 124       | 123          | 120.3   | 5.5     |
-| 35   | 99                | 111       | 106          | 105.3   | 6.0     |
-| 40   | 86                | 95        | 93           | 91.3    | 4.7     |
-| 45   | 71                | 81        | 81           | 77.7    | 5.8     |
-| 50   | 60                | 69        | 67           | 65.3    | 4.7     |
-| 55   | 46                | 52        | 55           | 51.0    | 4.6     |
-| 60   | 33                | 39        | 40           | 37.3    | 3.8     |
-| 65   | 25                | 28        | 31           | 28.0    | 3.0     |
-| 70   | 15                | 16        | 22           | 17.7    | 3.8     |
-| 75   | 10                | 9         | 14           | 11.0    | 2.6     |
-| 80   | 5                 | 5         | 7            | 5.6     | 1.2     |
-| 85   | 1                 | 1         | 2            | 1.3     | 0.6     |
-| 90   | 0                 | 0         | 0            | 0       | 0       |
-|------|-------------------|-----------|--------------|---------|---------|
+| 2    | 162               | 178       | 156          | 165.3   | 11.4    |
+| 3    | 159               | 175       | 157          | 163.7   | 9.9     |
+| 4   | 151               | 168       | 157          | 157.0   | 9.5     |
+| 5   | 145               | 160       | 148          | 151.0   | 7.9     |
+| 6   | 136               | 155       | 139          | 143.3   | 10.2    |
+| 7   | 124               | 141       | 131          | 132.0   | 8.5     |
+| 8   | 114               | 124       | 123          | 120.3   | 5.5     |
+
 { .booktable }
 ~
-~ TableFigure { #results; \
-    caption: "Experiment 2: Blue LED"; page-align: inplace;}
-|      |-------------------|-----------|--------------|---------|---------|
-|Angle | Raw sensor output |           |              |         |         |
-|      | Repeat one        | Repeat two| Repeat three | Average | Std Dev |
-|:-----|:-----------------:|:---------:|:------------:|:-------:|:-------:|
-| 0    | 275               | 401       | 469          | 381.7   | 98.4    |
-| 5    | 273               | 399       | 463          | 378.3   | 96.7    |
-| 10   | 268               | 395       | 451          | 371.3   | 93.8    |
-| 15   | 263               | 375       | 435          | 357.7   | 87.3    |
-| 20   | 241               | 364       | 409          | 338.0   | 87.0    |
-| 25   | 222               | 344       | 376          | 314.0   | 81.3    |
-| 30   | 206               | 315       | 351          | 290.7   | 75.5    |
-| 35   | 182               | 282       | 308          | 257.3   | 66.5    |
-| 40   | 152               | 252       | 260          | 221.3   | 60.2    |
-| 45   | 113               | 221       | 232          | 195.3   | 54.3    |
-| 50   | 110               | 175       | 194          | 159.7   | 44.0    |
-| 55   | 86                | 147       | 165          | 132.7   | 41.4    |
-| 60   | 64                | 114       | 119          | 99.0    | 30.4    |
-| 65   | 46                | 79        | 87           | 70.7    | 21.7    |
-| 70   | 32                | 47        | 57           | 45.3    | 12.6    |
-| 75   | 12                | 29        | 35           | 25.3    | 11.9    |
-| 80   | 6                 | 13        | 17           | 12.0    | 5.6     |
-| 85   | 2                 | 5         | 5            | 4.0     | 1.7     |
-| 90   | 0                 | 1         | 0            | 0.3     | 0.6     |
-|------|-------------------|-----------|--------------|---------|---------|
-{ .booktable }
-~
-~ TableFigure { #results; \
-    caption: "Experiment 2: Red LED"; page-align: inplace;}
-|      |-------------------|-----------|--------------|---------|---------|
-|Angle | Raw sensor output |           |              |         |         |
-|      | Repeat one        | Repeat two| Repeat three | Average | Std Dev |
-|:-----|:-----------------:|:---------:|:------------:|:-------:|:-------:|
-| 0    | 211               | 189       | 198          | 199.3   | 11.1    |
-| 5    | 205               | 184       | 186          | 191.7   | 11.6    |
-| 10   | 198               | 180       | 181          | 186.3   | 10.1    |
-| 15   | 188               | 175       | 177          | 180.0   | 7.0     |
-| 20   | 178               | 168       | 166          | 170.7   | 6.4     |
-| 25   | 167               | 155       | 157          | 159.7   | 6.4     |
-| 30   | 155               | 137       | 141          | 144.3   | 9.5     |
-| 35   | 138               | 121       | 123          | 127.3   | 9.3     |
-| 40   | 123               | 110       | 110          | 114.3   | 7.5     |
-| 45   | 114               | 106       | 104          | 108.0   | 5.3     |
-| 50   | 96                | 89        | 92           | 92.3    | 3.5     |
-| 55   | 79                | 71        | 69           | 73.0    | 5.3     |
-| 60   | 65                | 59        | 59           | 61.0    | 3.5     |
-| 65   | 49                | 46        | 47           | 47.3    | 1.5     |
-| 70   | 38                | 38        | 39           | 38.3    | 0.6     |
-| 75   | 28                | 29        | 29           | 28.7    | 0.6     |
-| 80   | 20                | 25        | 22           | 22.3    | 2.5     |
-| 85   | 16                | 19        | 18           | 17.7    | 1.5     |
-| 90   | 13                | 14        | 12           | 13.0    | 1.0     |
-|------|-------------------|-----------|--------------|---------|---------|
-{ .booktable }
-~
+
 
 ### Evaluation of Readings
 
