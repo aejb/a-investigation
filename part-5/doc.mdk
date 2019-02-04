@@ -21,10 +21,6 @@ Package: float
 5. Repeat steps 3 and 4 until a sufficient number of repeats has been obtained to reduce the impact of anomalous results.
 6. Repeat steps with different colors of LEDs: Red, Green, and Blue
 
-### Evaluation of Procedure
-
-This procedure was relatively easy, as I could use the same set-up as experiment 1. The major issue encountered was the variation in initial intensity. With experiment 1, only one type LED was used, so each repeat started with roughly the same initial conditions. With this experiment, each LED had a different initial brightness, as can be observed in the results below. This, however, will not affect my results, as I can both account for this in the final analysis, and compare each set of data separately.
-
 ### Table of Results.
 
 ~ TableFigure { #results; \
@@ -40,61 +36,12 @@ This procedure was relatively easy, as I could use the same set-up as experiment
 | 6      | 287         | 374 | 420 |     | 490 |
 | 7      | 290         | 323 | 360 |     | 419 |
 | 8      | 272         | 288 | 322 |     |     |
-
 { .booktable }
 ~
 
 
 ### Evaluation of Readings
 
-These readings were somewhat harder to achieve than the first experiment. For the green and blue LEDs, the type of LED (10mm) was used, so the results were similar, however with both having noticeably lower initial intensities. This is due to the neutral density effect of the LED coloring, and will not affect my analysis, as we will not need to compare the initial intensity of the different colors directly.
-
-The accuracy and standard deviation of these results was somewhat unexpected. The blue LED had error ranges between repeats comparable to the first experiment, but the red and green LEDs both had much smaller deviation between repeats. This is due to the overall intensities being lower, which means that there is a narrower range of results, due to the resolution of the sensor being 1.
 
 ### Analysis of Readings
-
-We can make the same substitutions as Experiment one to verify that these results follow Malus's law, with wavelength having no effect:
-
-$I\propto\cos^2\theta$
-
-$I=I_0\cos^2\theta$
-
-$\Rightarrow y=mx+c$
-
-$\therefore y=I, m=I_0, x=\cos^2\theta, c=0$
-
-These were then plotted as a line graph for each color, and lines of best fit were generated:
-
-![green]
-
-[green]: images/green.pdf "green" { width:auto; max-width:90% }
-
-![blue]
-
-[blue]: images/blue.pdf "blue" { width:auto; max-width:90% }
-
-![red]
-
-[red]: images/red.pdf "red" { width:auto; max-width:90% }
-
-
-From these graphs, we can see that each repeat produces roughly the same result - the line of best fit produces gradients which are roughly equal to the initial intensity $I_0$. From this, combined with the accurate prediction of a linear function, shows with considerable confidence that these results experimentally verify Malus's law.
-
-For each repeat, the calculated $I_0$ is not exactly as observed, as seen in table [#diff]
-
-~ TableFigure { #diff ; \
-    caption: "Difference in observed and calculated $I_0$"; page-align: inplace; }
-|      |----------|------------|------------|
-|Repeat| Observed | Calculated | Difference |
-|:-----|:--------:|:----------:|:----------:|
-| 1    | 1240     | 1237       | 3          |
-| 2    | 1121     | 1093       | 28         |
-| 3    | 1255     | 1226       | 29         |
-|------|----------|------------|------------|
-{ .booktable; }
-~
-
-This shows differences between observed and calculated initial intensities within acceptable error ranges. The difference can mostly be explained by the neutral density effect of the polarising filters - even at zero degrees there is a significant reduction in intensity with and without the filter. 
-
-These results also seem to indicate that the original method (with two separate clamp stands for each filter) seemed to produce more accurate results than the secondary method (with one clamp stand for both filters sandwiched together). However, repeats two and three clearly show a better line of best fit, with much larger deviation from best fit in repeat one. This means that the accuracy is purely a coincidentally better gradient.
 
