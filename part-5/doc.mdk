@@ -3,9 +3,6 @@ Logo          : False
 BibTeX: False
 Package: float
 
-
-[TITLE]
-
 [TOC]
 
 # Session
@@ -18,8 +15,8 @@ Package: float
 2. Turn on the microcontroller, and set two filters to the initial angle (90 degrees).
 3. Record the initial intensity sensor value.
 4. Add the next filter, keeping the same total angle but changing the angle between adjacent filters to ensure offset is equidistant.
-5. Repeat steps 3 and 4 until a sufficient number of repeats has been obtained to reduce the impact of anomalous results.
-6. Repeat steps with different colors of LEDs: Red, Green, and Blue
+5. Repeat steps 2-4 with a varying range of initial angles.
+
 
 ### Table of Results.
 
